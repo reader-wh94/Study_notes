@@ -4,5 +4,7 @@
 
 시험 내용 전체를 정리한 것은 아니고 헷갈릴 것 같은 부분들만 정리해놨습니다.
 
-자료는 [이 블로그](https://1d1cblog.tistory.com/87)에서 참고했습니다!
+<br>
+
+참고 자료: [필기 정리](https://1d1cblog.tistory.com/87), [필기 기출 정리](https://www.comcbt.com/xe/iz/4493129)
 
