@@ -6,5 +6,5 @@
 
 <br>
 
-참고 자료: [필기 정리](https://1d1cblog.tistory.com/87), [필기 기출 정리](https://www.comcbt.com/xe/iz/4493129)
+참고 자료: [필기 정리](https://1d1cblog.tistory.com/87), [필기 기출 정리](https://www.comcbt.com/xe/iz/4493129), [사설 문제](https://cafe.naver.com/soojebi/84596)
 
