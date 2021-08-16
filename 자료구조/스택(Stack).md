@@ -3,8 +3,8 @@
 ---
 
 ### 스택의 구조
+![스택 구조](https://user-images.githubusercontent.com/68210266/129522445-5266a30f-fa37-4425-a9ca-2d125373b057.PNG)
 
-<img src="D:\Study\Study_notes\사진\스택 구조.PNG" style="zoom: 67%;" />
 
 <br>
 
