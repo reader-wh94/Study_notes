@@ -3,8 +3,8 @@
 ----
 
 ### 큐의 구조
+![큐 구조](https://user-images.githubusercontent.com/68210266/129522528-e9ac88b2-99b4-4033-8af5-4faf454b9f43.PNG)
 
-![](D:\Study\Study_notes\사진\큐 구조.PNG)
 
 <br>
 
