@@ -64,7 +64,8 @@
 
 ### 균형 이진 트리(Full binary tree, 전 이진 트리)
 
-* 모든 노드가 0개 또는 2개의 자식 노드를 가지고 있는 트리이다.![전 이진 트리](https://user-images.githubusercontent.com/68210266/129728518-fe7abd7a-9183-4ddc-b3b6-2c47dc6bb2db.PNG)
+* 모든 노드가 0개 또는 2개의 자식 노드를 가지고 있는 트리이다.
+![전 이진 트리](https://user-images.githubusercontent.com/68210266/129728518-fe7abd7a-9183-4ddc-b3b6-2c47dc6bb2db.PNG)
 
 <br>
 
