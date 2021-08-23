@@ -69,3 +69,7 @@ int main(void) {
 - (n-1) + (n-2) + .... + 1 = n(n-2)/2 = O(n^2)
 
 ![시간 복잡도](https://user-images.githubusercontent.com/68210266/130449509-fa9aa4b1-29be-4fcf-9dbc-b6062fbc5a93.PNG)
+
+<br>
+
+[출처](https://blockdmask.tistory.com/153)
