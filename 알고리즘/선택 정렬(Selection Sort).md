@@ -72,4 +72,4 @@ int main(void) {
 
 <br>
 
-[출처](https://blockdmask.tistory.com/153)
+[코드 참고](https://blockdmask.tistory.com/153)
