@@ -1,6 +1,5 @@
 public class Insertion {
     int i, j;
-    int temp;
     int []a = {7, 2, 3, 9, 1};
 
     public void insertionSort() {
