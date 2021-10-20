@@ -11,5 +11,10 @@ public class Main {
         System.out.print("Selection Sort: ");
         s.selectionSort(data);
         System.out.println();
+
+        Bubble b = new Bubble();
+        System.out.print("Bubble Sort: ");
+        b.bubbleSort(data);
+        System.out.println();
     }
 }
