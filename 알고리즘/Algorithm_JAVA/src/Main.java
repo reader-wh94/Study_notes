@@ -16,5 +16,10 @@ public class Main {
         System.out.print("Bubble Sort: ");
         b.bubbleSort(data);
         System.out.println();
+
+        Heap h = new Heap();
+        System.out.println("Heap Sort: ");
+        h.heapSort(data);
+        System.out.println();
     }
 }
