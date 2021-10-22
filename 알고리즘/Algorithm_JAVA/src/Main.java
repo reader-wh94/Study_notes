@@ -21,5 +21,10 @@ public class Main {
         System.out.println("Heap Sort: ");
         h.heapSort(data);
         System.out.println();
+
+        Shell sh = new Shell();
+        System.out.println("Shell Sort: ");
+        sh.shellSort(data);
+        System.out.println();
     }
 }
