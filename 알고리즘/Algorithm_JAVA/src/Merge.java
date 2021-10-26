@@ -30,7 +30,12 @@ public class Merge {
         for(int p = m; p <= n; p++) {
             data[p] = buff[p];
         }
-        System.out.println(Arrays.toString(data));
+    }
+
+    public void print(int[] data) {
+        for(int i=0; i < data.length; i++) {
+            System.out.print(data[i] + " ");
+        }
     }
 
     public void mergeSort(int[] data, int m, int n) {
@@ -41,6 +46,5 @@ public class Merge {
             mergeSort(data, mid+1, n);
             merge(data, m, mid, n);
         }
-
     }
 }
