@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int data[] = {77, 5, 20, 2, 94};
+        int data[] = {77, 5, 20, 2, 94, 7, 23, 89, 55, 45, 35, 14, 1};
         int N = data.length;
 
         Insertion i = new Insertion();
@@ -32,6 +32,13 @@ public class Main {
         Merge.buff = new int[N];
         System.out.println("Merge Sort: ");
         m.mergeSort(data,0, N-1);
+        m.print(data);
+        System.out.println();
+
+        Quick q = new Quick();
+        System.out.println("Quick Sort: ");
+        q.quickSort(data,0, N-1);
+        q.print(data);
         System.out.println();
     }
 }
