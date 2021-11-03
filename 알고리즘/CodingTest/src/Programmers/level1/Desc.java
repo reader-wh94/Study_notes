@@ -1,6 +1,7 @@
 package Programmers.level1;
-
 import java.util.*;
+
+// https://programmers.co.kr/learn/courses/30/lessons/12933
 
 public class Desc {
     public long solution(long n) {
