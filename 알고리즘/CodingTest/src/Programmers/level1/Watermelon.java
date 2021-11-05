@@ -1,5 +1,7 @@
 package Programmers.level1;
 
+// https://programmers.co.kr/learn/courses/30/lessons/12922
+
 public class Watermelon {
     public String solution(int n) {
         String answer = "";
