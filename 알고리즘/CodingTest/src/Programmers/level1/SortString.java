@@ -13,5 +13,6 @@ public class SortString {
         Arrays.sort(arr);
         return new StringBuilder(new String(arr)).reverse().toString();
         // StringBuilder를 사용하여 reverse하기
+        // String, StringBuilder에 대해서 공부
     }
 }
