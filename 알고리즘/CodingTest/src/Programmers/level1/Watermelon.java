@@ -12,9 +12,7 @@ public class Watermelon {
             if(i % 2 == 0) b[i] = "수";
             else b[i] = "박";
         }
-
         answer = String.join("", b);
-
         return answer;
     }
 }
