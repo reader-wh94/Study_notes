@@ -14,7 +14,6 @@ public class AddArray {
                 }
             }
         }
-
         TreeSet<Integer> data = new TreeSet<Integer>(arr); // TreeSet으로 중복 제거
         List<Integer> answer = new ArrayList<Integer>(data);
 
