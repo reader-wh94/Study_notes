@@ -9,7 +9,6 @@ class Caesar {
         int[] ans2 = new int[ans.length];
         
         for(int i = 0; i < ans.length; i++) {
-            if((int)ans[i])
             ans2[i] = (int)ans[i] + n;
         }
         
