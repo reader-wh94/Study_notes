@@ -24,7 +24,7 @@
 
 - [ ] [소수](https://programmers.co.kr/learn/courses/30/lessons/12921)
 
-- [ ] [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
+- [x] [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
 
 - [ ] [이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930
   )
