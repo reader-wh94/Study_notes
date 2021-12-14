@@ -13,7 +13,7 @@
 
 - [ ] [K](https://programmers.co.kr/learn/courses/30/lessons/42748)
 
-- [ ] [직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
+- [x] [직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
 
 - [ ] [존재하지 않는..](https://programmers.co.kr/learn/courses/30/lessons/86051
   )
