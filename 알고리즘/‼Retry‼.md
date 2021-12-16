@@ -22,7 +22,7 @@
 
 - [ ] [포켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845)
 
-- [ ] [소수](https://programmers.co.kr/learn/courses/30/lessons/12921)
+- [x] [소수](https://programmers.co.kr/learn/courses/30/lessons/12921)
 
 - [x] [비밀지도](https://programmers.co.kr/learn/courses/30/lessons/17681)
 
