@@ -4,7 +4,7 @@
 
 - [ ] [해시](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
-- [ ] [카이사르](https://programmers.co.kr/learn/courses/30/lessons/12926)
+- [x] [시저](https://programmers.co.kr/learn/courses/30/lessons/12926)
 
 - [ ] [문자열 정렬](https://programmers.co.kr/learn/courses/30/lessons/12915)
 
