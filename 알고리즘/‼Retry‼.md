@@ -15,7 +15,7 @@
 
 - [x] [직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
 
-- [ ] [존재하지 않는..](https://programmers.co.kr/learn/courses/30/lessons/86051
+- [x] [존재하지 않는..](https://programmers.co.kr/learn/courses/30/lessons/86051
   )
 
 - [x] [같은 숫자는 싫어](https://programmers.co.kr/learn/courses/30/lessons/12906)
@@ -28,3 +28,4 @@
 
 - [ ] [이상한 문자 만들기](https://programmers.co.kr/learn/courses/30/lessons/12930
   )
+
