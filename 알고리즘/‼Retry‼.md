@@ -2,7 +2,7 @@
 
 ### Programmers Level 1
 
-- [ ] [해시](https://programmers.co.kr/learn/courses/30/lessons/42576)
+- [x] [해시](https://programmers.co.kr/learn/courses/30/lessons/42576)
 
 - [x] [시저](https://programmers.co.kr/learn/courses/30/lessons/12926)
 
