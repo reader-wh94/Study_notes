@@ -21,3 +21,4 @@
 - [ ] [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862)
 - [ ] [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
 - [ ] [크레인 인형 뽑기](https://programmers.co.kr/learn/courses/30/lessons/64061)
+- [ ] [키패드 누르기](https://programmers.co.kr/learn/courses/30/lessons/67256)
