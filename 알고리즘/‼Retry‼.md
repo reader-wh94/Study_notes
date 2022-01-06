@@ -7,7 +7,7 @@
 - [x] [문자열 정렬](https://programmers.co.kr/learn/courses/30/lessons/12915)
 - [ ] [다트게임](https://programmers.co.kr/learn/courses/30/lessons/17682
   )
-- [ ] [K](https://programmers.co.kr/learn/courses/30/lessons/42748)
+- [x] [K](https://programmers.co.kr/learn/courses/30/lessons/42748)
 - [x] [직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
 - [x] [존재하지 않는..](https://programmers.co.kr/learn/courses/30/lessons/86051
   )
