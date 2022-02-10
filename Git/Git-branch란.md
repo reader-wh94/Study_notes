@@ -81,6 +81,22 @@ Hotifx branch는 출시 버전에서 발생한 버그를 수정하는 브랜치�
 
 ### 3. Git Branch 사용 방법
 
+1. git branch foo (분기해오는 브랜치 없이 foo 브랜치 단독 생성)
+   * ex) git branch foo develop (foo 브랜치를 develop 브랜치에서 분기)
+2. git checkout foo (foo 브랜치로 이동)
+   * git checkout -b foo (1,2 번을 합친 명령어)
+3. git status
+4. git add . 
+5. git commit -m "commit message"
+6. git push origin foo 
+   * (3~6번은 해당 브랜치에서 코드 수정 및 추가를 한 후 remote repository에 올리기 위한 작업 - foo 프랜치에 push)
+7. git log 또는 git log --graph (필수는 아니지만 그래프로 commit 기록을 그래프로 확인)
+8. git checkout main (foo 브랜치에서 main 브랜치로 이동)
+9. git pull origin main (foo 브랜치에서 코드 수정 중 main 브랜치에 변동이 있었을 수도 있기 때문에 최신 상태를 만들고 브랜치를 합쳐야함)
+10. git merge --no -ff foo (foo 브랜치에 있는 commit 이력 모두 합쳐서 main에 병합)
+11. git branch -d foo (foo 브랜치 삭제)
+12. git push origin main  (main 브랜치에 foo 브랜치 반영)
+
 
 
 출처: [Git\] 명령어(3) - branch🐵](https://victorydntmd.tistory.com/75), [[GitHub] Git 브랜치의 종류 및 사용법 (5가지)](https://gmlwjd9405.github.io/2018/05/11/types-of-git-branch.html)
