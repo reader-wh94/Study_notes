@@ -4,7 +4,7 @@
 
 실행 가능한 파일의 형태로 하드 디스크나 USB 등의 저장 장치에 저장된 파일이다.
 
-
+<br>
 
 > 프로세스 (process)
 
@@ -25,6 +25,7 @@
 ![process1](https://user-images.githubusercontent.com/68210266/153742418-2aeec577-f43c-4040-869b-ac29984afc69.PNG)
 
 
+<br>
 
 > 프로세스 주소 공간
 
@@ -34,6 +35,7 @@
 * Stack 영역: 함수가 호출될 때, 지역 변수, 매개 변수, 함수의 리턴 값 등을 저장하기 위한 영역
 
 
+<br>
 
 > 프로세스 제어 블록 (Process Control Block, PCB)
 
