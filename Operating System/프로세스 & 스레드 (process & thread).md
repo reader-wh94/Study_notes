@@ -132,5 +132,6 @@
 * 단점
   * 서로 다른 스레드가 Data, Heap 영역 등을 공유하기 때문에 어떤 스레드가 다른 스레드에서 사용중인 변수나 자료구조에 접근하여 잘못된 값을 읽어오거나 수정할 수 있다. -> 자원 공유의 문제가 발생(동기화)
   * 하나의 스레드에 문제가 생기면 전체 프로세스가 영향을 받는다.
+<br>
 
 출처 : [프로세스 vs 스레드](https://github.com/WooVictory/Ready-For-Tech-Interview/blob/master/Operating%20System/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
