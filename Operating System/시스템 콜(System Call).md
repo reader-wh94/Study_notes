@@ -74,8 +74,29 @@ child: sum = 4950
 ### 2. exec()
 
 * 현재 실행중인 프로세스의 컨텍스트(context)에 새로운 실행 파일로부터 응용프로그램을 로딩하여 실행시킬 때 사용되는 기법이다.
-
 * 자신의 주소 공간에 새로운 응용프로그램의 코드, 데이터, 스택, 힙을 올리게 되어 현재 프로세스의 모든 정보들이 삭제된다.
+* exec()은 리눅스의 쉘, Windows의 탐색기나 cmd 창에서 사용자가 입력한 명령이나 응용프로그램을 실행시킬 때 많이 사용한다.
+
+```c
+/* 리눅스의 쉘(Shell)이나 Windows의 cmd 창에서 사용자가 입력한 명령을 처리하는 알고리즘 */
+
+while(true) {
+	char *cmd = waitCommandFromUser(); /* 사용자로부터 명령을 받아옴 */
+    
+    pid = fork(); /* 자식 프로세스 생성 */
+    
+    if(pid > 0) {
+        continue; /* 다음 명령 기다림 */
+    }
+    else if(pid == 0) { /* 자식 프로세스 코드 부분 */
+        exec(cmd); /* 자식 프로세스 위에 cmd 명령의 실행 파일을 로딩하여 실행시킴 */
+    }
+    else {
+        /* fork() 오류를 처리하는 코드 작성 */
+    }
+    
+}
+```
 
 <br>
 
@@ -84,6 +105,40 @@ child: sum = 4950
 ### 3. wait()
 
 * 자식 프로세스가 종료될 때까지 기다리는 작업이다.
+
+* 리턴 값은 자식 프로세스가 없다면 -1 리턴, 자식 프로세스로부터 종료 코드를 받고 리턴한 경우에는 자식 프로세스의 PID을 리턴한다.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+int main(int argc, char *argv[]) {
+    printf("pid : %d", (int) getpid()); // pid : 29146
+    
+    int rc = fork();					// 주목
+    
+    if (rc < 0) {
+        exit(1);
+    }									// (1) fork 실패
+    else if (rc == 0) {					// (2) child 인 경우 (fork 값이 0)
+        printf("child (pid : %d)", (int) getpid());
+    }
+    else {								// (3) parent case
+        int wc = wait(NULL)				// 추가된 부분
+        printf("parent of %d (wc : %d / pid : %d)", wc, rc, (int)getpid());
+    }
+}
+```
+
+```basi
+pid : 29146
+
+child (pid : 29147)
+
+parent of 29147 (wc : 29147 / pid : 29146)
+```
 
 <br>
 
