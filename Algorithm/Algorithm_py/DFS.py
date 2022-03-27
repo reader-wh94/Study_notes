@@ -76,3 +76,5 @@ def dfs_recursive(graph, start, visited = []):
 print(dfs_recursive(graph, 'A'))
 print(dfs_list(graph, 'A'))
 print(dfs_deque(graph, 'A'))
+
+# 출처 - https://data-marketing-bk.tistory.com/44
