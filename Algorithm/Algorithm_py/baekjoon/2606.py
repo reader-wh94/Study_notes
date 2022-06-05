@@ -15,17 +15,27 @@ def bfs(v):
                 queue.append(i)
                 count += 1
 
-N = int(input()) # 노드 수
-E = int(input()) # 간선 수
+def dfs(v):
+    global count
+    visited[v] = 1
+
+    for i in graph[v]:
+        if visited[i] == 0:
+            visited[i] = 1
+            dfs(i)
+            count += 1
+
+N = int(input())
+E = int(input())
 graph = [[] for _ in range(N + 1)]
 visited = [0 for _ in range(N + 1)]
 count = 0
 
-for _ in range(E):
+for i in range(E):
     x, y = map(int, input().split())
     graph[x].append(y)
     graph[y].append(x)
-    # 양방향 연결
 
 bfs(1)
+# dfs(1)
 print(count)
