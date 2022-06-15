@@ -6,31 +6,30 @@ dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
 
 def dfs(x, y, h):
+    visited[x][y] = True
+
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
 
         if 0 <= nx < N and 0 <= ny < N:
-            if graph[nx][ny] > h and visited[nx][ny] == False:
-                visited[nx][ny] = True
+            if visited[nx][ny] == False and graph[nx][ny] > h:
                 dfs(nx, ny, h)
 
 N = int(input())
 graph = [list(map(int, input().split())) for _ in range(N)]
-ans = 0
+area = 0
 
 for k in range(max(map(max, graph))):
-    visited = [[False]*N for _ in range(N)]
+    visited = [[False] * N for _ in range(N)]
     count = 0
 
     for i in range(N):
         for j in range(N):
-            if graph[i][j] > k and visited[i][j] == False:
-                visited[i][j] = True
+            if visited[i][j] == False and graph[i][j] > k:
                 count += 1
                 dfs(i, j, k)
-    ans = max(ans, count)
 
-print(ans)
+    area = max(area, count)
 
-#python3으로 하면 통과... pypy3은 메모리 초과... why?
+print(area)
