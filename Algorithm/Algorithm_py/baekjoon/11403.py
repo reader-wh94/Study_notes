@@ -11,6 +11,7 @@ def dfs(x):
             dfs(i)
 
 for i in range(N):
+    visited = [0 for _ in range(N)]
     dfs(i)
     for j in range(N):
         if visited[j] == 1:
@@ -18,4 +19,3 @@ for i in range(N):
         else:
             print(0, end=" ")
     print()
-    visited = [0 for _ in range(N)]
