@@ -5,27 +5,26 @@ sys.setrecursionlimit(100000)
 T = int(input())
 
 def dfs(x):
-    global result
+    global count
     visited[x] = True
     team.append(x)
     num = students[x]
 
     if visited[num] == True:
         if num in team:
-            result += team[team.index(num):]
+            count += team[team.index(num):]
         return
     else:
         dfs(num)
 
 for _ in range(T):
     N = int(input())
-    students = [0] +  list(map(int, input().split()))
-    visited = [True] + [False] * (N+1)
-    result = []
+    students = [0] + list(map(int, input().split()))
+    visited = [True] + [False] * N
+    count = []
 
-    for i in range(1, N + 1):
+    for i in range(1, N+1):
         if visited[i] == False:
             team = []
             dfs(i)
-
-    print(N - len(result))
+    print(N - len(count))
