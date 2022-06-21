@@ -11,9 +11,9 @@
 * fork로 생성한 본인 계정의 저장소에서 clone or download 버튼을 누르고 url을 복사한다.
 * 터미널을 켠다.
 * 자신이 사용하는 로컬 컴퓨터에 Fork한 저장소를 clone한다.
-  * ```$ git clone http://```
+  * ```$ git clone http://github.com/~```
 * 로컬 저장소에 원격 저장소를 추가한다.
-  * ```$ git remote add project(별명) http://~```
+  * ```$ git remote add project(별명) http://github.com/~```
   * ```$ git remote -v```
 
 
