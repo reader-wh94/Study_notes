@@ -2,31 +2,33 @@
 from collections import deque
 
 N, M, V = map(int, input().split())
-graph = [[] for _ in range(N+1)]
+graph = [[] for _ in range(N + 1)]
 visited_dfs = [0] * (N + 1)
 visited_bfs = [0] * (N + 1)
 
-def dfs(v):
-    visited_dfs[v] = 1
-    print(v, end=" ")
+def dfs(x):
+    visited_dfs[x] = 1
+    print(x, end=" ")
 
-    for i in graph[v]:
+    for i in graph[x]:
         if visited_dfs[i] == 0:
             dfs(i)
             visited_dfs[i] = 1
 
-def bfs(v):
-    visited_bfs[v] = 1
-    queue = deque()
-    queue.append(v)
+def bfs(x):
+    visited_bfs[x] = 1
 
-    while queue:
-        num = queue.popleft()
-        print(num, end=" ")
-        for i in graph[num]:
+    q = deque()
+    q.append(x)
+
+    while q:
+        x = q.popleft()
+        print(x, end=" ")
+
+        for i in graph[x]:
             if visited_bfs[i] == 0:
-                queue.append(i)
                 visited_bfs[i] = 1
+                q.append(i)
 
 for _ in range(M):
     u, v = map(int, input().split())
