@@ -1,20 +1,21 @@
 # https://www.acmicpc.net/problem/7562
 from collections import deque
 
-T = int(input())
-
 dx = [1, 2, 2, 1, -1, -2, -2, -1]
 dy = [2, 1, -1, -2, -2, -1, 1, 2]
 
-def bfs():
+T = int(input())
+
+def bfs(x, y):
     q = deque()
-    q.append((startX, startY))
+    q.append((x, y))
 
     while q:
         x, y = q.popleft()
 
         if x == endX and y == endY:
-                return graph[endX][endY] - 1
+            return graph[endX][endY] - 1
+        # 1부터 시작했으므로
 
         for i in range(8):
             nx = x + dx[i]
@@ -26,11 +27,11 @@ def bfs():
                     q.append((nx, ny))
 
 for _ in range(T):
-    l = int(input())
-    startX, startY = map(int, input().split())
-    endX, endY = map(int, input().split())
+     l = int(input())
+     startX, startY = map(int, input().split())
+     endX, endY = map(int, input().split())
+     graph = [[0] * l for _ in range(l)]
 
-    graph = [[0] * l for _ in range(l)]
+     graph[startX][startY] = 1
 
-    graph[startX][startY] = 1
-    print(bfs())
+     print(bfs(startX, startY))
