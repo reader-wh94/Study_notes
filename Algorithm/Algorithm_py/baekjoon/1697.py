@@ -2,8 +2,8 @@
 from collections import deque
 
 N, K = map(int, input().split())
+max = 100001
 visited = [0] * 100001
-max = 100000
 
 def bfs():
     q = deque()
