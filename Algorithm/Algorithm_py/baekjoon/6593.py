@@ -23,6 +23,7 @@ def bfs(x, y, z):
                 if graph[nx][ny][nz] == 'E':
                     print("Escaped in {0} minute(s).".format(visited[x][y][z]))
                     return
+
                 if graph[nx][ny][nz] == '.' and visited[nx][ny][nz] == 0:
                     visited[nx][ny][nz] = visited[x][y][z] + 1
                     q.append([nx, ny, nz])
@@ -31,7 +32,7 @@ def bfs(x, y, z):
 while True:
     l, r, c = map(int, input().split())
 
-    if l == 0:
+    if l == 0 and r == 0 and c == 0:
         break
 
     graph = [[[] * c for _ in range(r)] for _ in range(l)]
