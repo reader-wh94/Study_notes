@@ -2,12 +2,10 @@
 from collections import deque
 
 f, s, g, u, d = map(int, input().split())
-# f는 전체 층, g는 회사가 있는 층, s는 현재 위치, u는 위로 u층, d는 아래로 d층
-visited = [0] * (f + 1)
+visited = [0] * (f+1)
 
 def bfs():
-    q = deque()
-    q.append(s)
+    q = deque([s])
     visited[s] = 1
 
     while q:
