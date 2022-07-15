@@ -8,7 +8,9 @@ result = 0
 
 def bfs():
     global result
-    q = deque([n])
+    q = deque()
+    q.append(n)
+
     visited[n] = 1
 
     while q:
@@ -18,8 +20,8 @@ def bfs():
             result += 1
             continue
 
-        for i in (x-1, x+1, 2*x):
-            if 0 <= i < max and (visited[i] == visited[x] + 1 or visited[i] == 0):
+        for i in (x-1, x+1, x*2):
+            if 0 <= i < max and (visited[i] == 0 or visited[i] == visited[x] + 1):
                 visited[i] = visited[x] + 1
                 q.append(i)
 
