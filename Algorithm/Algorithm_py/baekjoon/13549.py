@@ -15,13 +15,13 @@ def bfs():
             print(visited[x] - 1)
             break
 
-        if 0 <= x * 2 < 100001 and visited[x*2] == 0:
-            visited[x*2] = visited[x]
-            q.appendleft(x*2)
-        if 0 <= x - 1 < 100001 and visited[x-1] == 0:
-            visited[x-1] = visited[x] + 1
-            q.append(x-1)
-        if 0 <= x + 1 < 100001 and visited[x+1] == 0:
-            visited[x+1] = visited[x] + 1
-            q.append(x+1)
+        for i in (x*2, x+1, x-1):
+            if 0 <= i < 100001 and visited[i] == 0:
+                if i == x*2:
+                    visited[i] = visited[x]
+                    q.appendleft(i)
+                else:
+                    visited[i] = visited[x] + 1
+                    q.append(i)
+
 bfs()
