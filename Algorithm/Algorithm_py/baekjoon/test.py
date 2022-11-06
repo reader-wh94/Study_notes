@@ -1,13 +1,13 @@
-n = int(input())
-cnt = n
+import sys
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+a = [list(map(int, input().split())) for _ in range(n)]
+b = [list(map(int, input().split())) for _ in range(n)]
 
 for i in range(n):
-    s = input()
+    for j in range(m):
+        a[i][j] += b[i][j]
 
-    for j in range(0, len(s) - 1):
-        if s[j] == s[j+1]:
-            pass
-        elif s[j] in s[j+1:]:
-            cnt -= 1
-            break
-print(cnt)
+for i in range(n):
+    print(*a[i])
