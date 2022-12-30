@@ -1,11 +1,16 @@
-n = int(input())
-numbers = []
+import sys
+input = sys.stdin.readline
 
-for _ in range(n):
-    numbers.append(int(input()))
+n, m = map(int, input().split())
+res = []
 
-numbers = list(set(numbers))
-numbers.sort()
+def dfs():
+    if len(res) == m:
+        print(' '.join(map(str, res)))
+        return
 
-for i in numbers:
-    print(i)
+    for i in range(1, n+1):
+        res.append(i)
+        dfs()
+        res.pop()
+dfs()
